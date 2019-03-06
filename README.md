@@ -12,3 +12,10 @@ $ git remote set-url origin https://github.com/user/repo2.git
   1. Create ScrollBox Component 
   2. attach ref to component
   3. call inner component method using ref
+
+## map
+ - Add / Remove Items
+  1. Create Input box and submit button
+  2. add onChange event and onClick event
+  3. when submit, add list
+  4. when click list twice. remove it
