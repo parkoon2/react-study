@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import ScrollBox from '../ScrollBox'
+import Map from '../Map'
 class App extends Component {
 
     _handleBottom = () => {
@@ -9,9 +10,12 @@ class App extends Component {
 
     render() {
         return (
+            // <div>
+            //     <ScrollBox ref={ref => this.scrollBox = ref} />
+            //     <button onClick={this._handleBottom}>BOTTOM</button>
+            // </div>
             <div>
-                <ScrollBox ref={ref => this.scrollBox = ref} />
-                <button onClick={this._handleBottom}>BOTTOM</button>
+                <Map />
             </div>
         )
     }
