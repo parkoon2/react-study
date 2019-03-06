@@ -3,11 +3,15 @@ import React, { Component } from 'react'
 import ScrollBox from '../ScrollBox'
 class App extends Component {
 
+    _handleBottom = () => {
+        this.scrollBox.scrollToBottom()
+    }
+
     render() {
         return (
             <div>
-                <ScrollBox />
-                <button onClick={this.handleBottom}>BOTTOM</button>
+                <ScrollBox ref={ref => this.scrollBox = ref} />
+                <button onClick={this._handleBottom}>BOTTOM</button>
             </div>
         )
     }
